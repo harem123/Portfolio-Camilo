@@ -1,5 +1,7 @@
-import {Box, Button} from "@mui/material"
+import {Box, Button,IconButton} from "@mui/material"
 import Header from "../../components/Header"
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useContext } from 'react'
 import { ColorModeContext, tokens } from '../../theme'
 import { useTheme} from "@mui/material"
@@ -12,7 +14,9 @@ const Home = () =>{
     const colorMode = useContext(ColorModeContext)
     return (
         <Box m="20px" textAlign='center'>
-            <Header title="Portfolio Camilo Portilla" subtitle="Welcome, here you will find my resume and relevant links to know about me"/>
+          <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '600px', margin: '0 auto'  }} >
+            <Header title="Portfolio Camilo Portilla" subtitle="Welcome, My name is Camilo, i am a Electronic Engineer passionate about technology and programming. During my education, I worked as a freelancer in microcontroller programming and embedded systems using C++, full-stack development with Javascript and Python, hardware design, and IoT solutions."/>
+            </Box>
             <Box >
             <Link to="https://drive.google.com/file/d/1XEGHN9cz65_fN7ApvPTScSRTSUmb8-Xa/view?usp=sharing" style={{ textDecoration: 'none' }}>
             <Button
@@ -29,37 +33,22 @@ const Home = () =>{
           
           </Link>
           </Box>
-
-          <Box sx={{ mt: "20px" }} >
+          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', height: '200px' }}>
+          <Box sx={{ mt: "20px",marginRight: '8px' }} >
             <Link to="https://github.com/harem123" style={{ textDecoration: 'none' }}>
-            <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            GitHub
-          </Button>
+            <IconButton>
+              <GitHubIcon/>
+            </IconButton>
           </Link>
           </Box>
-
+          
           <Box sx={{ mt: "20px" }} >
             <Link to="https://www.linkedin.com/in/camilo-portilla-2019a2/" style={{ textDecoration: 'none' }}>
-            <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            LinkedIn
-          </Button>
+            <IconButton>
+              <LinkedInIcon />
+            </IconButton>
           </Link>
+          </Box>
           </Box>
 
 
