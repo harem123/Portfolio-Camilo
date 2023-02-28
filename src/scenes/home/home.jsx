@@ -1,5 +1,6 @@
 import {Box, Button,IconButton} from "@mui/material"
 import Header from "../../components/Header"
+import Cards from "../../components/Cards"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useContext } from 'react'
@@ -30,8 +31,20 @@ const Home = () =>{
           >
             My Resume
           </Button>
-          
           </Link>
+
+          <Box sx={{mt: "20px", display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+          <Box sx={{ marginRight: '10px' }} > 
+              <Cards title={"backend"} info={"complete backend"}/>
+          </Box>
+          <Box sx={{ marginRight: '10px' }} > 
+              <Cards title={"fullstack"} info={"complete project"}/>
+          </Box>
+          <Box > 
+              <Cards title={"python"} info={"web desktop app"}/>
+          </Box>
+            </Box>
+
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', height: '200px' }}>
           <Box sx={{ mt: "20px",marginRight: '8px' }} >
