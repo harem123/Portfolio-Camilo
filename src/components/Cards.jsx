@@ -8,8 +8,7 @@ import {useTheme} from '@mui/material'
 import {tokens} from "../theme"
 import Typography from '@mui/material/Typography';
 import { PropaneSharp } from '@mui/icons-material';
-import imagen from '../static/images/cards/try6.jpg'
-import pythonimg from '../static/images/cards/imagePython.jpg'
+
 
 
 export default function Cards({title,info,imgUrl}) {
