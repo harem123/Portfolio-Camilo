@@ -72,9 +72,11 @@ const Home = () =>{
               <Cards imgUrl={dashImg}  title={"React JS Dashboard"} info={"Frontend responsive Dashboard project with light and dark theme and custom Material MUI palette"}/>
           </Box>
           </Link>
+          <Link to="https://github.com/harem123/pyhton-desktop-app" style={{ textDecoration: 'none' }}>
           <Box sx={{ marginBottom:'20px'}}> 
               <Cards imgUrl={pythonImg}  title={"Python Desktop App"} info={"Complete desktop application that creates an interface via USB Serial with a series of controllers and actuators (motors, sensors, lights) to simulate a controlled football training environment, which also sends all the information to the database."}/>
           </Box>
+          </Link>
             </Box>
             </Box>
 
