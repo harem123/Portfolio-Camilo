@@ -15,14 +15,14 @@ const Home = () =>{
     const colorMode = useContext(ColorModeContext)
     return (
         <Box m="20px" textAlign='center'>
-          <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '600px', margin: '0 auto'  }} >
+          <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '700px', margin: '0 auto'  }} >
             <Header title="Portfolio Camilo Portilla" subtitle="Welcome, My name is Camilo, i am a Electronic Engineer passionate about technology and programming. During my education, I worked as a freelancer in microcontroller programming and embedded systems using C++, full-stack development with Javascript and Python, hardware design, and IoT solutions."/>
             </Box>
             <Box >
             <Link to="https://drive.google.com/file/d/1XEGHN9cz65_fN7ApvPTScSRTSUmb8-Xa/view?usp=sharing" style={{ textDecoration: 'none' }}>
             <Button
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              background: colors.blueAccent[700],
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
@@ -32,16 +32,22 @@ const Home = () =>{
             My Resume
           </Button>
           </Link>
-
-          <Box sx={{mt: "20px", display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+          <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '600px', margin: '0 auto'  }} >
+            <Header title="Projects" />
+            </Box>
+          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+            <Link to="https://github.com/harem123/nodeAPI-REST">
           <Box sx={{ marginRight: '10px' }} > 
-              <Cards title={"backend"} info={"complete backend"}/>
+              <Cards title={"Node JS API REST"} info={"Backend project using node js and express with user login and and good API REST practices"}/>
           </Box>
+          </Link>
+          <Link to="https://goalab.up.railway.app/">
           <Box sx={{ marginRight: '10px' }} > 
-              <Cards title={"fullstack"} info={"complete project"}/>
+              <Cards title={"React JS Dashboard"} info={"Frontend responsive Dashboard project with light and dark theme and custom Material MUI palette"}/>
           </Box>
+          </Link>
           <Box > 
-              <Cards title={"python"} info={"web desktop app"}/>
+              <Cards title={"Python Desktop App"} info={"Tkinter GUI to manage many microcontrollers via serial comunication"}/>
           </Box>
             </Box>
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
@@ -22,17 +22,16 @@ export default function Cards({title,info}) {
         image="/static/images/cards/contemplative-reptile.jpg"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h3" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" sx={{color:colors.greenAccent[400],
+        maxWidth: 345  }}>
          {info}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      
+     
     </Card>
     
   );
