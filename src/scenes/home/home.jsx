@@ -1,4 +1,4 @@
-import {Box, Button,IconButton} from "@mui/material"
+import {Box, Button,IconButton, Grid} from "@mui/material"
 import Header from "../../components/Header"
 import Cards from "../../components/Cards"
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,12 +7,13 @@ import { useContext } from 'react'
 import { ColorModeContext, tokens } from '../../theme'
 import { useTheme} from "@mui/material"
 import {Link} from "react-router-dom"
-
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Home = () =>{
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const colorMode = useContext(ColorModeContext)
+    const isXsScreen = useMediaQuery('(max-width:600px)');
     return (
         <Box m="20px" textAlign='center'>
           <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '700px', margin: '0 auto'  }} >
@@ -32,26 +33,32 @@ const Home = () =>{
             My Resume
           </Button>
           </Link>
+          {/* GRID CHART*/}
+          
           <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '600px', margin: '0 auto'  }} >
             <Header title="Projects" />
             </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-            <Link to="https://github.com/harem123/nodeAPI-REST">
-          <Box sx={{ marginRight: '10px' }} > 
+            
+          <Box sx={{ display: 'flex',flexDirection: isXsScreen ? 'column' : 'row', justifyContent: 'center'}}>
+            <Link to="https://github.com/harem123/nodeAPI-REST" style={{ textDecoration: 'none' }}>
+          <Box sx={{ marginRight: '10px', marginBottom:'20px'}} > 
               <Cards title={"Node JS API REST"} info={"Backend project using node js and express with user login and and good API REST practices"}/>
           </Box>
           </Link>
-          <Link to="https://goalab.up.railway.app/">
-          <Box sx={{ marginRight: '10px' }} > 
+          <Link to="https://goalab.up.railway.app/" style={{ textDecoration: 'none' }}>
+          <Box sx={{ marginRight: '10px' , marginBottom:'20px'}} > 
               <Cards title={"React JS Dashboard"} info={"Frontend responsive Dashboard project with light and dark theme and custom Material MUI palette"}/>
           </Box>
           </Link>
-          <Box > 
-              <Cards title={"Python Desktop App"} info={"Tkinter GUI to manage many microcontrollers via serial comunication"}/>
+          <Box sx={{ marginBottom:'20px'}}> 
+              <Cards title={"Python Desktop App"} info={"Complete desktop application that creates an interface via USB Serial with a series of controllers and actuators (motors, sensors, lights) to simulate a controlled football training environment, which also sends all the information to the database."}/>
           </Box>
             </Box>
+            </Box>
+            
 
-          </Box>
+            {/* PSEUDO FOOTER*/}
+         
           <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', height: '200px' }}>
           <Box sx={{ mt: "20px",marginRight: '8px' }} >
             <Link to="https://github.com/harem123" style={{ textDecoration: 'none' }}>
