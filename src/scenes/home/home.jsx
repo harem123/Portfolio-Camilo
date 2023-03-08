@@ -8,7 +8,9 @@ import { ColorModeContext, tokens } from '../../theme'
 import { useTheme} from "@mui/material"
 import {Link} from "react-router-dom"
 import useMediaQuery from '@mui/material/useMediaQuery';
-
+import pythonImg from '../../static/images/cards/imagePython.jpg'
+import dashImg from '../../static/images/cards/dash4.png'
+import nodeImg from '../../static/images/cards/nodejs.png'
 const Home = () =>{
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
@@ -62,16 +64,16 @@ const Home = () =>{
           <Box sx={{ display: 'flex',flexDirection: isXsScreen ? 'column' : 'row', justifyContent: 'center'}}>
             <Link to="https://github.com/harem123/nodeAPI-REST" style={{ textDecoration: 'none' }}>
           <Box sx={{ marginRight: '10px', marginBottom:'20px'}} > 
-              <Cards title={"Node JS API REST"} info={"Backend project using node js and express with user login and and good API REST practices"}/>
+              <Cards imgUrl={nodeImg} title={"Node JS API REST"} info={"Backend project using node js and express with user login and and good API REST practices"}/>
           </Box>
           </Link>
           <Link to="https://goalab.up.railway.app/" style={{ textDecoration: 'none' }}>
           <Box sx={{ marginRight: '10px' , marginBottom:'20px'}} > 
-              <Cards title={"React JS Dashboard"} info={"Frontend responsive Dashboard project with light and dark theme and custom Material MUI palette"}/>
+              <Cards imgUrl={dashImg}  title={"React JS Dashboard"} info={"Frontend responsive Dashboard project with light and dark theme and custom Material MUI palette"}/>
           </Box>
           </Link>
           <Box sx={{ marginBottom:'20px'}}> 
-              <Cards title={"Python Desktop App"} info={"Complete desktop application that creates an interface via USB Serial with a series of controllers and actuators (motors, sensors, lights) to simulate a controlled football training environment, which also sends all the information to the database."}/>
+              <Cards imgUrl={pythonImg}  title={"Python Desktop App"} info={"Complete desktop application that creates an interface via USB Serial with a series of controllers and actuators (motors, sensors, lights) to simulate a controlled football training environment, which also sends all the information to the database."}/>
           </Box>
             </Box>
             </Box>
