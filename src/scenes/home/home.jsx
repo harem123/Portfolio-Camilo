@@ -33,6 +33,26 @@ const Home = () =>{
             My Resume
           </Button>
           </Link>
+          {/* PSEUDO FOOTER*/}
+         
+          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', height: '100px' }}>
+          <Box sx={{ mt: "20px",marginRight: '8px' }} >
+            <Link to="https://github.com/harem123" style={{ textDecoration: 'none' }}>
+            <IconButton >
+              <GitHubIcon sx={{ fontSize: '50px' }}/>
+            </IconButton>
+          </Link>
+          </Box>
+          
+          <Box sx={{ mt: "20px" }} >
+            <Link to="https://www.linkedin.com/in/camilo-portilla-2019a2/" style={{ textDecoration: 'none' }}>
+            <IconButton>
+              <LinkedInIcon sx={{ fontSize: '50px' }}/>
+            </IconButton>
+          </Link>
+          </Box>
+          </Box>
+          {/* PSEUDO FOOTER*/}
           {/* GRID CHART*/}
           
           <Box sx={{ display: 'flex', justifyContent: 'center' , maxWidth: '600px', margin: '0 auto'  }} >
@@ -55,28 +75,6 @@ const Home = () =>{
           </Box>
             </Box>
             </Box>
-            
-
-            {/* PSEUDO FOOTER*/}
-         
-          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', height: '200px' }}>
-          <Box sx={{ mt: "20px",marginRight: '8px' }} >
-            <Link to="https://github.com/harem123" style={{ textDecoration: 'none' }}>
-            <IconButton>
-              <GitHubIcon/>
-            </IconButton>
-          </Link>
-          </Box>
-          
-          <Box sx={{ mt: "20px" }} >
-            <Link to="https://www.linkedin.com/in/camilo-portilla-2019a2/" style={{ textDecoration: 'none' }}>
-            <IconButton>
-              <LinkedInIcon />
-            </IconButton>
-          </Link>
-          </Box>
-          </Box>
-
 
         </Box>
         
