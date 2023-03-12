@@ -8,7 +8,7 @@ import { ColorModeContext, tokens } from '../../theme'
 import { useTheme} from "@mui/material"
 import {Link} from "react-router-dom"
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pythonImg from '../../static/images/cards/imagePython.jpg'
+import pythonImg from '../../static/images/cards/Goalweb.jpg'
 import dashImg from '../../static/images/cards/dash4.png'
 import nodeImg from '../../static/images/cards/nodejs.png'
 const Home = () =>{
