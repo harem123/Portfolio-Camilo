@@ -22,7 +22,7 @@ const Home = () =>{
             <Header title="Portfolio Camilo Portilla" subtitle="Welcome, My name is Camilo, i am a Electronic Engineer passionate about technology and programming. During my education, I worked as a freelancer in microcontroller programming and embedded systems using C++, full-stack development with Javascript and Python, hardware design, and IoT solutions."/>
             </Box>
             <Box >
-            <Link to="https://drive.google.com/file/d/1XEGHN9cz65_fN7ApvPTScSRTSUmb8-Xa/view?usp=sharing" style={{ textDecoration: 'none' }}>
+            <Link to="https://drive.google.com/file/d/1KX-5W1gV2uOEf22Rc69CIGSCrl9km5nZ/view?usp=sharing" style={{ textDecoration: 'none' }}>
             <Button
             sx={{
               background: colors.blueAccent[700],
@@ -47,7 +47,7 @@ const Home = () =>{
           </Box>
           
           <Box sx={{ mt: "20px" }} >
-            <Link to="https://www.linkedin.com/in/camilo-portilla-2019a2/" style={{ textDecoration: 'none' }}>
+            <Link to="https://www.linkedin.com/in/camiloportilla-desarrolladorfullstack/" style={{ textDecoration: 'none' }}>
             <IconButton>
               <LinkedInIcon sx={{ fontSize: '50px' }}/>
             </IconButton>
