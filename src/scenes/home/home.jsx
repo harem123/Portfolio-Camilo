@@ -64,7 +64,7 @@ const Home = () =>{
           <Box sx={{ display: 'flex',flexDirection: isXsScreen ? 'column' : 'row', justifyContent: 'center'}}>
             <Link to="https://github.com/harem123/nodeAPI-REST" style={{ textDecoration: 'none' }}>
           <Box sx={{ marginRight: '10px', marginBottom:'20px'}} > 
-              <Cards imgUrl={nodeImg} title={"Node JS API REST"} info={"Backend project using node js and express with user login and and good API REST practices"}/>
+              <Cards imgUrl={nodeImg} title={"Node JS API REST"} info={"Backend project using Node Js and express with user login and and good API REST practices"}/>
           </Box>
           </Link>
           <Link to="https://goalab.up.railway.app/" style={{ textDecoration: 'none' }}>
